@@ -1,4 +1,384 @@
-.miAnchoFijo{
-	max-width: 800px;
-	margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@keyframes rotacion{
+	0%{transform: rotate(0deg);
+	}
+	100%{transform: rotate(360deg);
+	}
 }
+
+@keyframes tituloAgranda{
+	0%{transform: scale(1);}
+	50%{ transform: scale(0.5);
+	}
+	100%{ transform: scale(1);
+	}
+}
+
+@keyframes parrafo{
+	0%{color: black;}
+	25%{color: yellow;}
+	50%{color: green;}
+	75%{color: blue;}
+	100%{color: black;}
+}
+/*--------------------------------MENU---------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+#pagina{
+	background: #d6b69c;
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas:
+	"header"
+	"barra"
+	"main";
+	grid-template-rows: 15vw 3.5vw 5fr;
+}
+img{
+	max-width: 100%;
+}
+.encabezado{
+	grid-area: header;
+	display: flex;
+	justify-content: stretch;
+}
+.encabezado img{
+	width: 15vw;
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+	padding: 3px;
+}
+#tucu{
+	grid-area: titulo;
+	font-size: 4vw;
+	align-items: center;
+	font-family: 'Kaushan Script', cursive;
+	flex-grow: 1;
+}
+#barraMenu{
+	grid-area: barra;
+	justify-self: stretch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e2863b;
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+}
+.a1{
+	text-decoration: none;
+	color: black;
+	font-size: 2vw;
+	text-align: center;
+	font-family: cursive;
+	font-weight: 750;
+	padding: 0vw 1vw;
+}
+.a1:hover{
+	background: #d6b69c;
+	border: 1px solid #000;
+}
+.a1:active{
+	background: #b76421;
+}
+.seleccionado{
+	background: #d6b69c;
+	border: 1px solid #000;
+}
+
+
+.cuerpoMenu{
+	grid-area: main;
+	justify-items: center;
+	display: grid;
+	grid-template-areas:
+	"tituloMenu2"
+	"empanadas"
+	"pizzas";
+	grid-template-rows: 4vw 32vw 32vw;
+	padding: 2vw 0px 0px;
+	grid-row-gap: 1vw;
+}
+#tituloMenu{
+	grid-area: tituloMenu2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family:'Kaushan Script', cursive;
+	font-size: 2.9vw;
+	background: #e2863b;
+	border-bottom: 8px solid #000;
+	border-top: 8px solid #000;
+	width: 100%;
+}
+
+#empanadas{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#empanadas div{
+	font-size: 2vw;
+	font-family:'Kaushan Script', cursive;
+	background-image: url(imagen/madera.png);
+	width: 100%;
+}
+#empanadas table{
+	background-image: url(imagen/empanada.png);
+	background-repeat: repeat;
+}
+
+#pizzas{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#pizzas div{
+	font-size: 2vw;
+	font-family:'Kaushan Script', cursive;
+	background-image: url(imagen/madera.png);
+	width: 100%;
+}
+#pizzas table{
+	background-image: url(imagen/pizza.png);
+	background-repeat: repeat;
+}
+
+thead tr th{
+	text-align: center;
+	padding: 0.3vw 3.5vw;
+	font-size: 3vw;
+	font-weight: 600;
+}
+
+tbody tr td ul{
+	list-style: none;
+	padding: 0.7vw;
+}
+
+ tbody tr td{
+ 	text-align: center;
+ 	font-weight: 600;
+ 	font-size: 1.5vw;
+ }
+
+ .pie{
+	align-self: center;
+	padding: 30px 0px 0px;
+}
+
+.redes{
+	display: flex;
+	justify-content: center;
+	background: #e2863b;			
+	border-top: 1px solid #000;
+	align-items: center;
+}
+
+.redes div img{
+	width: 3.5vw;
+	padding: 1vw 0.7vw;
+}
+
+/*--------------------------------INDEX/CONTACTO/PERSONAL/GALERIA/RECIBE---------------------------*/
+
+#body{
+	background: linear-gradient(#efcc67, black);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.encabezado2{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-content: center;
+}
+.encabezado2 img{
+	width: 40vw;
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+	padding: 20px 20px;
+}
+
+.encabezado2 .titulo{
+	font-size: 13vw;
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+	width: 100%;
+	animation-name: tituloAgranda;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.barra2{
+	display: flex;
+	justify-content: center;
+	background: #e2863b;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	align-items: center;
+	width: 100%;
+	min-height: 100px;
+	flex-wrap: wrap;
+	padding: 20px 0px;
+}
+.barra2 .a1{
+	text-decoration: none;
+	color: black;
+	font-size: 5vw;
+	text-align: center;
+	font-family: cursive;
+	font-weight: 750;
+	padding: 10px;
+}
+.barra2 .a1:hover{
+	background: #d6b69c;
+	border: 1px solid #000;
+}
+.barra2 .a1:active{
+	background: #b76421;
+}
+.barra2 .a1 .seleccionado{
+	background: #d6b69c;
+	border: 1px solid #000;
+}
+
+.parrafoFlex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+.parrafoFlex div{
+	padding: 1.4vw;
+	color: aqua;
+	text-align: center;
+	font-size: 8vw;
+	text-align: left;
+}
+.parrafoNormal{
+	display: flex;
+	text-align: center;
+	font-size: 10vw;
+	flex-wrap: wrap;
+	font-family: 'Arial';
+}
+.parrafoNormal:hover{
+	animation-name: parrafo;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+
+.mapa{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	padding: 10px;
+}
+.mapa iframe{
+	width: 90vw;
+	height: 45vw;
+}
+
+.botonPedido{
+	position: fixed;
+	width: 18vw;
+	bottom: 0;
+	right: 0;
+	padding: 1vw 1vw; 
+}
+
+#main{
+	flex-grow: 1;
+}
+.redes2{
+	display: flex;
+	justify-content: center;
+	background: #e2863b;			
+	border-top: 1px solid #000;
+	align-items: center;
+	min-height: 50px;
+}
+
+.redes2 div img{
+	width: 6vw;
+	padding: 1vw 0.7vw;
+}
+
+/*-----------------------------MEDIA----------------------------*/
+
+@media all and (min-width: 768px){
+
+	.barra2{
+		min-height: 250px;
+	}
+	.barra2 .a1{
+		padding: 40px 22px;
+	}
+	.parrafoFlex{
+		display: inline-flex;
+		flex-wrap: nowrap;
+	}
+	.parrafoFlex div{
+		color: blue;
+	}
+
+	.parrafoNormal{
+		font-size: 5vw;
+	}
+}
+
+@media all and (min-width: 1025px){
+
+	.encabezado2{
+		flex-direction: row;
+	}
+	.encabezado2 img{
+		width: 12vw;
+	}
+	.encabezado2 .titulo{
+		font-size: 7vw;
+		flex-grow: 1;
+	}
+	.barra2{
+		min-height: 38px;
+	}
+	.barra2 .a1{
+		font-size: 2vw;
+		padding: 0vw 1vw;
+	}
+	.botonPedido{
+		width: 7.3vw;
+	}
+	.parrafoFlex{
+		display: row;
+		flex-wrap: wrap;
+	}
+	.parrafoFlex div{
+		font-size: 4vw;
+		color: aqua;
+	}
+	.parrafoNormal{
+		font-size: 4vw;
+	}
+	.mapa iframe{
+		width: 73vw;
+		height: 21vw
+	}
+	.redes2 div img{
+		width: 3.5vw;
+	}
+	.barra2 div:hover{
+		animation-name: rotacion;
+		animation-duration: 2.5s;
+	}
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>ElTucuGastronomia</title>
+</head>
+
+<body>
+	
+	<div class="encabezado">
+				<div> <a href="index.html"><img src="imagen/Tucu.png" alt="FOTO LOGO" id="INICIO"></a></div>
+				<div class="titulo">TUCU GASTRONOMIA</div>
+	</div>
+
+
+	<div class="barra">
+				<div><a class="a1" href="index.html">INICIO</a></div>
+				<div><a class="a1" href="menu.html">MENU</a></div>
+				<div><a class="a1" href="galeria.html">GALERIA</a></div>
+				<div><a class="a1" href="personal.html">PERSONAL</a></div>
+				<div><a class="a1 seleccionado" href="contacto.html">CONTACTO</a></div>
+				<div><a class="a1" href="#redes">REDES</a></div>
+	</div>
+
+	<div id="main">
+		<div id="contacto">
+			<form method="POST" action="recibe.html">
+				<div>
+					<label for="nombre">NOMBRE:</label>
+					<input type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre" required="true">
+				</div>
+
+				<div>
+					<label  for="apellido">APELLIDO:</label>
+					<input type="text" name="Apellido" id="apellido" placeholder="Ingrese su apellido" required="true">
+				</div>
+
+				<div>
+					<label for="mail">MAIL:</label>
+					<input type="mail" name="Mail" id="mail" placeholder="Ingrese su mail" required="true">
+				</div>
+
+				<div>
+					<label for="comentario">COMENTARIO: </label>
+					<textarea type="text" name="Comentario" id="comentario" placeholder="Ingrese un comentario" required="true"></textarea>
+				</div>
+
+				<div id="botones">
+					<input class="boton" type="submit" value="Enviar">
+					<input class="boton" type="reset" value="Limpiar">
+				</div>
+			</form>
+		</div>
+	</div>	
+	<div class="redes" id="redes">
+		<div><a href="https://www.instagram.com/eltucu_gastronomia/?hl=es" target="_blank"></a><a href="https://www.instagram.com/eltucu_gastronomia/?hl=es" target="_blank"><img src="imagen/ig.png" alt="INSTAGRAM"></a></div>
+		<div><a href="https://www.facebook.com/gastronomiaartesanalelTucu" target="_blank"></a><a href="https://www.facebook.com/gastronomiaartesanalelTucu" target="_blank"><img src="imagen/fb.png" alt="FACEBOOK"></a></div>
+		<div><img src="imagen/wp.png" alt="WHATSAPP"></div>
+	</div>
+</body>
+</html>
