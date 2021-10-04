@@ -69,6 +69,7 @@ FUENTE:
 }
 
 .bg-principal {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#FFB908), to(black));
   background: linear-gradient(black, #FFB908, black);
 }
 

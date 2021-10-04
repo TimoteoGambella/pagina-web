@@ -11,7 +11,7 @@ FUENTE:
 
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
-/*----------TRANSFORMACIONES-------*/
+//----------TRANSFORMACIONES-------//
 
 @keyframes tituloAgranda{
 	0%{transform: scale(1);}
@@ -40,9 +40,9 @@ FUENTE:
 	background: linear-gradient(black, #FFB908 ,black)
 }
 
-/*--------------------------------INDEX/CONTACTO/PERSONAL/GALERIA/RECIBE---------------------------*/
+//--------------------------------INDEX/CONTACTO/PERSONAL/GALERIA/RECIBE---------------------------//
 
-/*--------------------------------------BODY + ENCABEZADO---------*/	
+//--------------------------------------BODY + ENCABEZADO---------//
 #body{
 	min-height: 100vh;
 	background: black;
@@ -68,7 +68,7 @@ FUENTE:
 	animation-iteration-count: infinite;
 	animation-duration: 5s;
 }
-/*--------------------------------------BARRA DE MENU---------*/	
+//--------------------------------------BARRA DE MENU---------//	
 .barra{
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
@@ -95,7 +95,7 @@ FUENTE:
 	border: 1px solid #000;
 }
 
-/*--------------------------------------CUERPOS---------*/
+//--------------------------------------CUERPOS---------//
 #main{
 	background: linear-gradient(black, #FFB908, black, #FFB908, black, #FFB908, black);
 	display: grid;
@@ -153,7 +153,7 @@ FUENTE:
 #parrafo p{
 	margin: 0px;
 }
-/*--------------------------------------MAPS---------*/
+//--------------------------------------MAPS---------//
 
  #mapaTitulo{
 	font-family: 'New Rocker', cursive;
@@ -179,7 +179,7 @@ FUENTE:
 	border-radius: 50px;
 }
 
-/*--------------------------------------BOTON PEDIDO---------*/
+//--------------------------------------BOTON PEDIDO---------//
 .botonPedido{
 	width: 7.3vw;
 	bottom: 0;
@@ -190,7 +190,7 @@ FUENTE:
 	animation-duration: 4s;
 }
 
-/*--------------------------------------BARRA DE REDES---------*/
+//--------------------------------------BARRA DE REDES---------//
 .redes{	
 	border-top: 1px solid #000;
 	min-height: 8vw;
@@ -207,7 +207,7 @@ FUENTE:
 	padding: 1vw 0.7vw;
 }
 
-/*--------------------------------------HTML CONTACTO---------*/
+//--------------------------------------HTML CONTACTO---------//
 #contacto{
 	padding: 1vw;
 }
@@ -233,7 +233,7 @@ textarea{
 	font-size: 1.1vw;
 	color: black;
 }
-/*--------------------------------------BOTONES DE CONTACTO---------*/
+//--------------------------------------BOTONES DE CONTACTO---------//
 #botones{
 	justify-content: space-evenly;
 	padding: 1vw;
@@ -249,8 +249,8 @@ textarea{
 	flex-grow: 1;
 }
 
-/*-------------------------MENU--------------------------*/
-/*-----------------------------MENU POR IZQUIERDA----------------------------*/
+//-------------------------MENU--------------------------//
+//-----------------------------MENU POR IZQUIERDA----------------------------//
 .menuI{
 	border: 8px solid #FFB908;
 	height: 30vw;
@@ -287,7 +287,7 @@ textarea{
 #descripcion #precios li{
 	padding: 2px;
 }
-/*-----------------------------MENU POR DERECHA----------------------------*/
+//-----------------------------MENU POR DERECHA----------------------------//
 .menuD{
 	border: 10px solid #FFB908;
 	height: 30vw;
@@ -306,7 +306,7 @@ textarea{
 	margin: 15px;
 }
 
-/*-------------------------RECIBE------------------------*/
+//-------------------------RECIBE------------------------//
 #recibe{
 	font-size:5vw;
 	color: #FFB908;
@@ -314,7 +314,7 @@ textarea{
 	text-align: center;
 }
 
-/*--------------------------GALERIA----------------------------*/
+//--------------------------GALERIA----------------------------//
 .containerCarrusel{
 	max-width: 46vw;
 	min-width: 46vw;
@@ -329,7 +329,7 @@ textarea{
 	max-height: 30vw;
 }
 
-/*-------------------------PERSONAL------------------------*/
+//-------------------------PERSONAL------------------------//
 .personal div{
 	padding: 20px;
 }
@@ -343,7 +343,7 @@ textarea{
 	width: 15vw;
 }
 
-/*-----------------------------MEDIA 1024PX----------------------------*/
+//-----------------------------MEDIA 1024PX----------------------------//
 
 @media all and (max-width: 1024px){
 
@@ -473,7 +473,7 @@ textarea{
 	}
 }
 
-/*---------------------------MEDIA 640PX------------------------------*/
+//---------------------------MEDIA 640PX------------------------------//
 @media all and (max-width: 640px){
 	.fixedEspecial{
 		position: fixed;
@@ -481,7 +481,7 @@ textarea{
 		width: 100%;
 	}
 }
-/*-----------------------------MEDIA 550PX----------------------------*/
+//-----------------------------MEDIA 550PX----------------------------//
 @media all and (max-width: 550px){
 
 	.encabezado{
@@ -572,7 +572,7 @@ textarea{
 		width: 35vw;
 	}
 }
-/*-----------------------------MEDIA 450PX----------------------------*/
+//-----------------------------MEDIA 450PX----------------------------//
 @media all and (max-width: 550px){
 	.personal div{
 		flex-direction: column;
