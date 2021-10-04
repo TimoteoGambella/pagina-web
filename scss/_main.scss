@@ -69,14 +69,14 @@ FUENTE:
 	animation-duration: 5s;
 }
 //--------------------------------------BARRA DE MENU---------//	
-.barra{
+.nav{
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	width: 100%;
 	min-height: 5vw;
 	padding: 20px 0px;
 }
-.barra .a1{
+.nav .a1{
 	font-family: 'New Rocker', cursive;
 	color: black;
 	font-size: 2vw;
@@ -85,12 +85,12 @@ FUENTE:
 	padding: 0vw 1vw;
 	border-radius: 40px;
 }
-.barra .a1:hover{
+.nav .a1:hover{
 	background: #E3B237;
 	border: 1px solid #000;
 }
 
-.barra .seleccionado{
+.nav .seleccionado{
 	background: #E3B237;
 	border: 1px solid #000;
 }
@@ -356,10 +356,10 @@ textarea{
 	.encabezado .titulo{
 		font-size: 10vw;
 	}
-	.barra{
+	.nav{
 		min-height: 15vw;
 	}
-	.barra .a1{
+	.nav .a1{
 		font-size: 4.5vw;
 	}
 	#main{
@@ -493,10 +493,10 @@ textarea{
 	.encabezado .titulo{
 		font-size: 10vw;
 	}
-	.barra{
+	.nav{
 		min-height: 20vw;
 	}
-	.barra .a1{
+	.nav .a1{
 		font-size: 5.5vw;
 	}
 	#main{

@@ -9,7 +9,6 @@ FUENTE:
 	font-family: 'New Rocker', cursive;
 */
 @import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
-/*----------TRANSFORMACIONES-------*/
 @-webkit-keyframes tituloAgranda {
   0% {
     -webkit-transform: scale(1);
@@ -73,8 +72,6 @@ FUENTE:
   background: linear-gradient(black, #FFB908, black);
 }
 
-/*--------------------------------INDEX/CONTACTO/PERSONAL/GALERIA/RECIBE---------------------------*/
-/*--------------------------------------BODY + ENCABEZADO---------*/
 #body {
   min-height: 100vh;
   background: black;
@@ -107,8 +104,7 @@ FUENTE:
           animation-duration: 5s;
 }
 
-/*--------------------------------------BARRA DE MENU---------*/
-.barra {
+.nav {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   width: 100%;
@@ -116,7 +112,7 @@ FUENTE:
   padding: 20px 0px;
 }
 
-.barra .a1 {
+.nav .a1 {
   font-family: 'New Rocker', cursive;
   color: black;
   font-size: 2vw;
@@ -126,24 +122,23 @@ FUENTE:
   border-radius: 40px;
 }
 
-.barra .a1:hover {
+.nav .a1:hover {
   background: #E3B237;
   border: 1px solid #000;
 }
 
-.barra .seleccionado {
+.nav .seleccionado {
   background: #E3B237;
   border: 1px solid #000;
 }
 
-/*--------------------------------------CUERPOS---------*/
 #main {
   background: linear-gradient(black, #FFB908, black, #FFB908, black, #FFB908, black);
   display: -ms-grid;
   display: grid;
   grid-template-areas: "main1"
-  "main2"
-  "main3";
+ "main2"
+ "main3";
   grid-template-rows: repeat(3, 50vw);
 }
 
@@ -203,7 +198,6 @@ FUENTE:
   margin: 0px;
 }
 
-/*--------------------------------------MAPS---------*/
 #mapaTitulo {
   font-family: 'New Rocker', cursive;
   color: #E3B237;
@@ -236,7 +230,6 @@ FUENTE:
   border-radius: 50px;
 }
 
-/*--------------------------------------BOTON PEDIDO---------*/
 .botonPedido {
   width: 7.3vw;
   bottom: 0;
@@ -250,7 +243,6 @@ FUENTE:
           animation-duration: 4s;
 }
 
-/*--------------------------------------BARRA DE REDES---------*/
 .redes {
   border-top: 1px solid #000;
   min-height: 8vw;
@@ -269,7 +261,6 @@ FUENTE:
   padding: 1vw 0.7vw;
 }
 
-/*--------------------------------------HTML CONTACTO---------*/
 #contacto {
   padding: 1vw;
 }
@@ -299,7 +290,6 @@ textarea {
   color: black;
 }
 
-/*--------------------------------------BOTONES DE CONTACTO---------*/
 #botones {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -320,8 +310,6 @@ textarea {
           flex-grow: 1;
 }
 
-/*-------------------------MENU--------------------------*/
-/*-----------------------------MENU POR IZQUIERDA----------------------------*/
 .menuI {
   border: 8px solid #FFB908;
   height: 30vw;
@@ -365,7 +353,6 @@ textarea {
   padding: 2px;
 }
 
-/*-----------------------------MENU POR DERECHA----------------------------*/
 .menuD {
   border: 10px solid #FFB908;
   height: 30vw;
@@ -385,7 +372,6 @@ textarea {
   margin: 15px;
 }
 
-/*-------------------------RECIBE------------------------*/
 #recibe {
   font-size: 5vw;
   color: #FFB908;
@@ -393,7 +379,6 @@ textarea {
   text-align: center;
 }
 
-/*--------------------------GALERIA----------------------------*/
 .containerCarrusel {
   max-width: 46vw;
   min-width: 46vw;
@@ -409,7 +394,6 @@ textarea {
   max-height: 30vw;
 }
 
-/*-------------------------PERSONAL------------------------*/
 .personal div {
   padding: 20px;
 }
@@ -425,8 +409,7 @@ textarea {
   width: 15vw;
 }
 
-/*-----------------------------MEDIA 1024PX----------------------------*/
-@media all and (max-width: 1024px){
+@media all and (max-width: 1024px) {
   .encabezado {
     min-height: 30vw;
   }
@@ -436,10 +419,10 @@ textarea {
   .encabezado .titulo {
     font-size: 10vw;
   }
-  .barra {
+  .nav {
     min-height: 15vw;
   }
-  .barra .a1 {
+  .nav .a1 {
     font-size: 4.5vw;
   }
   #main {
@@ -568,7 +551,6 @@ textarea {
   }
 }
 
-/*---------------------------MEDIA 640PX------------------------------*/
 @media all and (max-width: 640px) {
   .fixedEspecial {
     position: fixed;
@@ -577,8 +559,7 @@ textarea {
   }
 }
 
-/*-----------------------------MEDIA 550PX----------------------------*/
-@media all and (max-width: 550px){
+@media all and (max-width: 550px) {
   .encabezado {
     min-height: 40vw;
   }
@@ -588,10 +569,10 @@ textarea {
   .encabezado .titulo {
     font-size: 10vw;
   }
-  .barra {
+  .nav {
     min-height: 20vw;
   }
-  .barra .a1 {
+  .nav .a1 {
     font-size: 5.5vw;
   }
   #main {
@@ -667,7 +648,6 @@ textarea {
   }
 }
 
-/*-----------------------------MEDIA 450PX----------------------------*/
 @media all and (max-width: 550px) {
   .personal div {
     -webkit-box-orient: vertical;
