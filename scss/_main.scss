@@ -37,7 +37,7 @@ FUENTE:
 	padding: 0;
 }
 .bg-principal{
-	background: linear-gradient(black, #FFB908 ,black)
+	background: linear-gradient($miBackground)
 }
 
 //--------------------------------INDEX/CONTACTO/PERSONAL/GALERIA/RECIBE---------------------------//
@@ -62,7 +62,7 @@ FUENTE:
 }
 .encabezado .titulo{
 	font-size: 7vw;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	width: 100%;
 	animation-name: tituloAgranda;
 	animation-iteration-count: infinite;
@@ -70,14 +70,14 @@ FUENTE:
 }
 //--------------------------------------BARRA DE MENU---------//	
 .nav{
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+	border-top: $borde1px;
+	border-bottom: $borde1px;
 	width: 100%;
 	min-height: 5vw;
 	padding: 20px 0px;
 }
 .nav .a1{
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	color: black;
 	font-size: 2vw;
 	text-align: center;
@@ -87,17 +87,17 @@ FUENTE:
 }
 .nav .a1:hover{
 	background: #E3B237;
-	border: 1px solid #000;
+	border: $borde1px;
 }
 
 .nav .seleccionado{
 	background: #E3B237;
-	border: 1px solid #000;
+	border: $borde1px;
 }
 
 //--------------------------------------CUERPOS---------//
 #main{
-	background: linear-gradient(black, #FFB908, black, #FFB908, black, #FFB908, black);
+	background: linear-gradient($miBackground, #FFB908, $miBackground);
 	display: grid;
 	grid-template-areas:
 	"main1"
@@ -130,7 +130,7 @@ FUENTE:
 
 .mainTitulo{
 	font-size: 3vw;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	color: #E3B237;
 	padding: 5vw 0vw 1vw;
 }
@@ -156,7 +156,7 @@ FUENTE:
 //--------------------------------------MAPS---------//
 
  #mapaTitulo{
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	color: #E3B237;
 	animation-name: tituloMapa;
 	animation-iteration-count: infinite;
@@ -192,9 +192,9 @@ FUENTE:
 
 //--------------------------------------BARRA DE REDES---------//
 .redes{	
-	border-top: 1px solid #000;
+	border-top: $borde1px;
 	min-height: 8vw;
-	background: linear-gradient(black, #FFB908 ,black);
+	background: linear-gradient($miBackground);
 }
  .redes div{
  	border: 4px solid black;
@@ -223,7 +223,7 @@ form label{
 	vertical-align: top;
 	padding: 0.7vw 0.7vw;
 	color: #E3B237;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 }
 textarea{
 	width: 14vw;
@@ -258,6 +258,9 @@ textarea{
 	margin: 0.3vw 0vw 3.5vw 1.4vw;
 	border-radius: 5.8vw;
 }
+.menuI:hover{
+	border: 8px solid white;
+}
 .menuI img{
 	width: 17vw;
 	padding: 2vw;
@@ -270,13 +273,13 @@ textarea{
 #descripcion #productoTitulo{
 	color: #E3B237;
 	font-size: 3vw;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	margin: 0px;
 }
 #descripcion ul{
 	color: #E3B237;
 	font-size: 1.4vw;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	margin: 0px;
 	list-style-type: none;
 }
@@ -295,6 +298,9 @@ textarea{
 	margin: 0.3vw 1.4vw 3.5vw 0vw;
 	border-radius: 5.8vw;
 }
+.menuD:hover{
+	border: 8px solid white;
+}
 .menuD img{
 	width: 20vw;
 	padding: 2vw;
@@ -310,7 +316,7 @@ textarea{
 #recibe{
 	font-size:5vw;
 	color: #FFB908;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 	text-align: center;
 }
 
@@ -337,7 +343,7 @@ textarea{
 	text-align: center;
 	font-size: 2vw;
 	color: #FFB908;
-	font-family: 'New Rocker', cursive;
+	font-family: $miFuente;
 }
 .personal img{
 	width: 15vw;
@@ -397,6 +403,7 @@ textarea{
 		height: 40vw;
 		border: 6px solid #FFB908;
 	}
+
 	.menuI #descripcion{
 		display: flex;
 		flex-direction: column;
