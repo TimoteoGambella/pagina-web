@@ -769,6 +769,27 @@ textarea {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+  #descripcion #productoTitulo {
+    font-size: 4.4vw;
+  }
+  #descripcion ul {
+    font-size: 3vw;
+  }
+  #descripcion #precios {
+    font-size: 3.7vw;
+  }
+  .menuD {
+    height: 60vw;
+  }
+  .menuI {
+    height: 60vw;
+  }
+  .menuD img {
+    width: 28vw;
+  }
+  .menuI img {
+    width: 28vw;
+  }
 }
 
 @media all and (max-width: 340px) {
@@ -780,6 +801,49 @@ textarea {
   }
   .nav .a1especial {
     font-size: 7.5vw;
+  }
+}
+
+@media all and (max-width: 280px) {
+  #descripcion #productoTitulo {
+    font-size: 5.8vw;
+    padding-bottom: 5px;
+  }
+  #descripcion ul {
+    font-size: 3.8vw;
+  }
+  #descripcion #precios {
+    font-size: 4vw;
+  }
+  .menuD {
+    height: 90vw;
+  }
+  .menuI {
+    height: 90vw;
+  }
+  .menuD img {
+    width: 28vw;
+  }
+  .menuI img {
+    width: 28vw;
+  }
+  form input {
+    height: 10vw;
+    font-size: 4.8vw;
+  }
+  form label {
+    font-weight: 550;
+    font-size: 5vw;
+  }
+  textarea {
+    width: 56vw;
+    font-size: 5vw;
+  }
+  #botones input {
+    margin: 3.8vw;
+    padding-right: 4.5vw;
+    padding-left: 4.5vw;
+    font-size: 6vw;
   }
 }
 
