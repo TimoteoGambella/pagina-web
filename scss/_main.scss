@@ -47,7 +47,6 @@ FUENTE:
 	min-height: 100vh;
 	background: black;
 }
-
 .encabezado{
 	min-height: 15vw;
 }
@@ -94,7 +93,19 @@ FUENTE:
 	background: #E3B237;
 	border: $borde1px;
 }
-
+.nav .a1especial{
+	font-family: $miFuente;
+	color: black;
+	font-size: 2vw;
+	text-align: center;
+	font-weight: 750;
+	padding: 0vw 1vw;
+	border-radius: 40px;
+}
+.navbar-light .navbar-toggler{
+	border: 5px solid black;
+	color: black;
+}
 //--------------------------------------CUERPOS---------//
 #main{
 	background: linear-gradient($miBackground, #FFB908, $miBackground);
@@ -368,6 +379,9 @@ textarea{
 	.nav .a1{
 		font-size: 4.5vw;
 	}
+	.nav .a1especial{
+		font-size: 4.5vw;
+	}
 	#main{
 		grid-template-rows: repeat(3, 50vw);
 	}
@@ -498,6 +512,9 @@ textarea{
 	.nav .a1{
 		font-size: 5.5vw;
 	}
+	.nav .a1especial{
+		font-size: 5.5vw;
+	}
 	#main{
 		grid-template-rows: repeat(3, 60vw);
 	}
@@ -566,7 +583,7 @@ textarea{
 		width: 35vw;
 	}
 }
-//-----------------------------MEDIA 450PX----------------------------//
+//-----------------------------MEDIA 550PX----------------------------//
 @media all and (max-width: 550px){
 	.personal div{
 		flex-direction: column;
@@ -597,8 +614,20 @@ textarea{
 		font-size: 3.8vw;
 	}
 }
-//-----------------------------MEDIA 450PX----------------------------//
-@media all and (max-width: 550px){
+//-----------------------------MEDIA 340PX----------------------------//
+@media all and (max-width: 340px){
+	.nav{
+		min-height: 20vw;
+	}
+	.nav .a1{
+		font-size: 7.5vw;
+	}
+	.nav .a1especial{
+		font-size: 7.5vw;
+	}
+}
+//-----------------------------MEDIA 250PX----------------------------//
+@media all and (max-width: 250px){
 	.fixedEspecial{
 		position: fixed;
 		bottom: 0;

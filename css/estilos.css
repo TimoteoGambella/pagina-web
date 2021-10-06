@@ -132,6 +132,21 @@ FUENTE:
   border: 1px solid #000;
 }
 
+.nav .a1especial {
+  font-family: "New Rocker", cursive;
+  color: black;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 750;
+  padding: 0vw 1vw;
+  border-radius: 40px;
+}
+
+.navbar-light .navbar-toggler {
+  border: 5px solid black;
+  color: black;
+}
+
 #main {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#FFB908), color-stop(black), color-stop(#FFB908), color-stop(black), color-stop(#FFB908), to(black));
   background: linear-gradient(black, #FFB908, black, #FFB908, black, #FFB908, black);
@@ -440,6 +455,9 @@ textarea {
   .nav .a1 {
     font-size: 4.5vw;
   }
+  .nav .a1especial {
+    font-size: 4.5vw;
+  }
   #main {
     -ms-grid-rows: (50vw)[3];
         grid-template-rows: repeat(3, 50vw);
@@ -583,6 +601,9 @@ textarea {
   .nav .a1 {
     font-size: 5.5vw;
   }
+  .nav .a1especial {
+    font-size: 5.5vw;
+  }
   #main {
     -ms-grid-rows: (60vw)[3];
         grid-template-rows: repeat(3, 60vw);
@@ -688,7 +709,19 @@ textarea {
   }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 340px) {
+  .nav {
+    min-height: 20vw;
+  }
+  .nav .a1 {
+    font-size: 7.5vw;
+  }
+  .nav .a1especial {
+    font-size: 7.5vw;
+  }
+}
+
+@media all and (max-width: 250px) {
   .fixedEspecial {
     position: fixed;
     bottom: 0;
