@@ -480,14 +480,6 @@ textarea{
 	}
 }
 
-//---------------------------MEDIA 640PX------------------------------//
-@media all and (max-width: 640px){
-	.fixedEspecial{
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-	}
-}
 //-----------------------------MEDIA 550PX----------------------------//
 @media all and (max-width: 550px){
 
@@ -567,11 +559,6 @@ textarea{
 		max-width: 90vw;
 		max-height: 74vw;
 	}
-	.fixedEspecial{
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-	}
 	.personal p{
 		font-size: 3.4vw;
 	}
@@ -608,5 +595,13 @@ textarea{
 		padding-right: 4.5vw;
 		padding-left: 4.5vw;
 		font-size: 3.8vw;
+	}
+}
+//-----------------------------MEDIA 450PX----------------------------//
+@media all and (max-width: 550px){
+	.fixedEspecial{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 	}
 }

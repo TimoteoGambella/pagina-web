@@ -567,14 +567,6 @@ textarea {
   }
 }
 
-@media all and (max-width: 640px) {
-  .fixedEspecial {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-}
-
 @media all and (max-width: 550px) {
   .encabezado {
     min-height: 40vw;
@@ -652,11 +644,6 @@ textarea {
     max-width: 90vw;
     max-height: 74vw;
   }
-  .fixedEspecial {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
   .personal p {
     font-size: 3.4vw;
   }
@@ -698,6 +685,14 @@ textarea {
     padding-right: 4.5vw;
     padding-left: 4.5vw;
     font-size: 3.8vw;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .fixedEspecial {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
