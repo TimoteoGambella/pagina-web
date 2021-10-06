@@ -493,7 +493,29 @@ textarea{
 		font-size: 3vw;
 	}
 }
-
+//-----------------------------MEDIA 900PX----------------------------//
+@media all and (max-width: 900px){
+	#main{
+		grid-template-rows: repeat(3, 80vw);
+	}
+	.main1 div img{
+		width: 25vw;
+	}
+	.main2 div img{
+		width: 18vw;
+	}
+	.main3 div img{
+		width: 28vw;
+	}
+	.mainContenido{
+		max-height: 50vw;
+		min-width: 90vw;
+	}
+	#parrafo{
+		font-size: 2.8vw;
+		align-self: flex-start;
+	}
+}
 //-----------------------------MEDIA 550PX----------------------------//
 @media all and (max-width: 550px){
 
@@ -516,7 +538,7 @@ textarea{
 		font-size: 5.5vw;
 	}
 	#main{
-		grid-template-rows: repeat(3, 60vw);
+		grid-template-rows: repeat(3, 100vw);
 	}
 	.main1 .mainTitulo{
 		font-size: 5.5vw;
@@ -582,9 +604,6 @@ textarea{
 	.personal img{
 		width: 35vw;
 	}
-}
-//-----------------------------MEDIA 550PX----------------------------//
-@media all and (max-width: 550px){
 	.personal div{
 		flex-direction: column;
 		align-items: center;
@@ -612,6 +631,44 @@ textarea{
 		padding-right: 4.5vw;
 		padding-left: 4.5vw;
 		font-size: 3.8vw;
+	}
+	.main1 div img{
+		width: 30vw;
+	}
+	.main2 div img{
+		width: 22vw;
+	}
+	.main3 div img{
+		width: 38vw;
+	}
+	.mainContenido{
+		max-height: 70vw;
+	}
+	#parrafo{
+		font-size: 3.6vw;
+	}
+}
+//-----------------------------MEDIA 450PX----------------------------//
+@media all and (max-width: 450px){
+	#main{
+		grid-template-rows: repeat(3, 140vw);
+	}
+	.main1 div img{
+		width: 40vw;
+	}
+	.main2 div img{
+		width: 24vw;
+	}
+	.main3 div img{
+		width: 48vw;
+	}
+	.mainContenido{
+		max-height: 130vw;
+		min-width: 100vw;
+	}
+	#parrafo{
+		font-size: 5vw;
+		align-self: flex-start;
 	}
 }
 //-----------------------------MEDIA 340PX----------------------------//

@@ -585,6 +585,31 @@ textarea {
   }
 }
 
+@media all and (max-width: 900px) {
+  #main {
+    -ms-grid-rows: (80vw)[3];
+        grid-template-rows: repeat(3, 80vw);
+  }
+  .main1 div img {
+    width: 25vw;
+  }
+  .main2 div img {
+    width: 18vw;
+  }
+  .main3 div img {
+    width: 28vw;
+  }
+  .mainContenido {
+    max-height: 50vw;
+    min-width: 90vw;
+  }
+  #parrafo {
+    font-size: 2.8vw;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 @media all and (max-width: 550px) {
   .encabezado {
     min-height: 40vw;
@@ -605,8 +630,8 @@ textarea {
     font-size: 5.5vw;
   }
   #main {
-    -ms-grid-rows: (60vw)[3];
-        grid-template-rows: repeat(3, 60vw);
+    -ms-grid-rows: (100vw)[3];
+        grid-template-rows: repeat(3, 100vw);
   }
   .main1 .mainTitulo {
     font-size: 5.5vw;
@@ -671,9 +696,6 @@ textarea {
   .personal img {
     width: 35vw;
   }
-}
-
-@media all and (max-width: 550px) {
   .personal div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -706,6 +728,46 @@ textarea {
     padding-right: 4.5vw;
     padding-left: 4.5vw;
     font-size: 3.8vw;
+  }
+  .main1 div img {
+    width: 30vw;
+  }
+  .main2 div img {
+    width: 22vw;
+  }
+  .main3 div img {
+    width: 38vw;
+  }
+  .mainContenido {
+    max-height: 70vw;
+  }
+  #parrafo {
+    font-size: 3.6vw;
+  }
+}
+
+@media all and (max-width: 450px) {
+  #main {
+    -ms-grid-rows: (140vw)[3];
+        grid-template-rows: repeat(3, 140vw);
+  }
+  .main1 div img {
+    width: 40vw;
+  }
+  .main2 div img {
+    width: 24vw;
+  }
+  .main3 div img {
+    width: 48vw;
+  }
+  .mainContenido {
+    max-height: 130vw;
+    min-width: 100vw;
+  }
+  #parrafo {
+    font-size: 5vw;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
