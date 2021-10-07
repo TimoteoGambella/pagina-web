@@ -152,9 +152,7 @@ FUENTE:
   background: linear-gradient(black, #FFB908, black, #FFB908, black, #FFB908, black);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "main1"
- "main2"
- "main3";
+      grid-template-areas: "main1" "main2" "main3";
   -ms-grid-rows: (50vw)[3];
       grid-template-rows: repeat(3, 50vw);
 }
@@ -791,6 +789,20 @@ textarea {
   }
   .menuI img {
     width: 28vw;
+  }
+  #mapaTitulo {
+    display: none !important;
+  }
+  .mapa {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 45vw;
+  }
+  .mapa iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
   }
 }
 
