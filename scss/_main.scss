@@ -49,23 +49,22 @@ FUENTE:
 }
 .encabezado{
 	min-height: 15vw;
-}
-.encabezado img{
-	width: 12vw;
-	filter: brightness(1.1);
-	mix-blend-mode: multiply;
-}
-
-.encabezado #fotologo{
-	padding-left: 8vw;
-}
-.encabezado .titulo{
-	font-size: 7vw;
-	font-family: $miFuente;
-	width: 100%;
-	animation-name: tituloAgranda;
-	animation-iteration-count: infinite;
-	animation-duration: 5s;
+	& img{
+		width: 12vw;
+		filter: brightness(1.1);
+		mix-blend-mode: multiply;
+	}
+	& #fotologo{
+		padding-left: 8vw;
+	}
+	& .titulo{
+		font-size: 7vw;
+		font-family: $miFuente;
+		width: 100%;
+		animation-name: tituloAgranda;
+		animation-iteration-count: infinite;
+		animation-duration: 5s;
+	}
 }
 //--------------------------------------BARRA DE MENU---------//	
 .nav{
@@ -74,33 +73,32 @@ FUENTE:
 	width: 100%;
 	min-height: 5vw;
 	padding: 20px 0px;
-}
-.nav .a1{
-	font-family: $miFuente;
-	color: black;
-	font-size: 2vw;
-	text-align: center;
-	font-weight: 750;
-	padding: 0vw 1vw;
-	border-radius: 40px;
-}
-.nav .a1:hover{
-	background: #E3B237;
-	border: $borde1px;
-}
-
-.nav .seleccionado{
-	background: #E3B237;
-	border: $borde1px;
-}
-.nav .a1especial{
-	font-family: $miFuente;
-	color: black;
-	font-size: 2vw;
-	text-align: center;
-	font-weight: 750;
-	padding: 0vw 1vw;
-	border-radius: 40px;
+	& .a1{
+		font-family: $miFuente;
+		color: black;
+		font-size: 2vw;
+		text-align: center;
+		font-weight: 750;
+		padding: 0vw 1vw;
+		border-radius: 40px;
+		&:hover{
+			background: #E3B237;
+			border: $borde1px;
+		}
+	}
+	& .seleccionado{
+		background: #E3B237;
+		border: $borde1px;
+	}
+	& .a1especial{
+		font-family: $miFuente;
+		color: black;
+		font-size: 2vw;
+		text-align: center;
+		font-weight: 750;
+		padding: 0vw 1vw;
+		border-radius: 40px;
+	}
 }
 .navbar-light .navbar-toggler{
 	border: 5px solid black;
@@ -118,27 +116,24 @@ FUENTE:
 }
 .main1{
 	grid-area: main1;
+	& div img{
+		width: 20vw;
+	}
 }
- .main1 div img{
- 	width: 20vw;
- }
-
  .main2{
 	grid-area: main2;
+	& div img{
+		width: 12vw;
+		padding: 10px;
+	}
 }
-.main2 div img{
-	width: 12vw;
-	padding: 10px;
-}
-
 .main3{
 	grid-area: main3;
+	& div img{
+		width: 18vw;
+		padding: 15px;
+	}
 }
-.main3 div img{
-	padding: 15px;
-	width: 18vw;
-}
-
 .mainTitulo{
 	font-size: 3vw;
 	font-family: $miFuente;
@@ -154,15 +149,14 @@ FUENTE:
 	border-radius: 15px;
 	border: 2px solid black;
 }
-
 #parrafo{
 	max-width: 50vw;
 	max-height: 20vw;
 	font-size: 1.8vw;
 	font-weight: 800;
-}
-#parrafo p{
-	margin: 0px;
+	& p{
+		margin: 0px;
+	}
 }
 //--------------------------------------MAPS---------//
 
@@ -173,23 +167,22 @@ FUENTE:
 	animation-iteration-count: infinite;
 	animation-duration: 7s;
 	flex-grow: 1;
- }
- #mapaTitulo p{
- 	font-size: 4vw;		
- 	text-shadow: 10px 10px 10px #E3B237;
+	& p{
+		font-size: 4vw;		
+		text-shadow: 10px 10px 10px#E3B237;
+	}
  }
 .mapa{
 	margin: 50px;
 	padding: 25px;
 	background: #E3B237;
 	border-radius: 50px;
+	& iframe{
+		width: 40vw;
+		height: 21vw;
+		border-radius: 50px;
+	}
 }
-.mapa iframe{
-	width: 40vw;
-	height: 21vw;
-	border-radius: 50px;
-}
-
 //--------------------------------------BOTON PEDIDO---------//
 .botonPedido{
 	width: 7.3vw;
@@ -206,35 +199,36 @@ FUENTE:
 	border-top: $borde1px;
 	min-height: 8vw;
 	background: linear-gradient($miBackground);
+	& div{
+		border: 4px solid black;
+		background: #E3B237;
+		border-radius: 45px;
+		margin: 15px;
+		& img{
+			width: 4vw;
+			padding: 1vw 0.7vw;
+		}
+	}
 }
- .redes div{
- 	border: 4px solid black;
- 	background: #E3B237;
- 	border-radius: 45px;
- 	margin: 15px;
- }
-.redes div img{
-	width: 4vw;
-	padding: 1vw 0.7vw;
-}
-
 //--------------------------------------HTML CONTACTO---------//
 #contacto{
 	padding: 1vw;
 }
-form input{
-	height: 2.5vw;
-	font-size: 1.1vw;
-	border: 2px solid #FFB908;
-	color: black;
-}
-form label{
-	font-weight: 500;
-	font-size: 2.1vw;
-	vertical-align: top;
-	padding: 0.7vw 0.7vw;
-	color: #E3B237;
-	font-family: $miFuente;
+form{
+	& input{
+		height: 2.5vw;
+		font-size: 1.1vw;
+		border: 2px solid #FFB908;
+		color: black;
+	}
+	& label{
+		font-weight: 500;
+		font-size: 2.1vw;
+		vertical-align: top;
+		padding: 0.7vw 0.7vw;
+		color: #E3B237;
+		font-family: $miFuente;
+	}
 }
 textarea{
 	width: 14vw;
@@ -248,14 +242,13 @@ textarea{
 #botones{
 	justify-content: space-evenly;
 	padding: 1vw;
+	& input{
+		margin: 1vw;
+		padding-right: 1vw;
+		padding-left: 1vw;
+		font-size: 1.4vw;
+	}
 }
-#botones input{
-	margin: 1vw;
-	padding-right: 1vw;
-	padding-left: 1vw;
-	font-size: 1.4vw;
-}
-
 #cuerpoContacto{
 	flex-grow: 1;
 }
@@ -268,38 +261,38 @@ textarea{
 	width: 55vw;
 	margin: 0.3vw 0vw 3.5vw 1.4vw;
 	border-radius: 5.8vw;
+	&:hover{
+		border: 8px solid white;
+	}
+	& img{
+		width: 17vw;
+		padding: 2vw;
+		border-radius: 5.8vw;
+	}
 }
-.menuI:hover{
-	border: 8px solid white;
-}
-.menuI img{
-	width: 17vw;
-	padding: 2vw;
-	border-radius: 5.8vw;
-}
-.menuI #descripcion{
+#descripcion{
 	min-height: 18vw;
 	margin: 15px;
-}
-#descripcion #productoTitulo{
-	color: #E3B237;
-	font-size: 3vw;
-	font-family: $miFuente;
-	margin: 0px;
-}
-#descripcion ul{
-	color: #E3B237;
-	font-size: 1.4vw;
-	font-family: $miFuente;
-	margin: 0px;
-	list-style-type: none;
-}
-#descripcion #precios{
-	font-size: 2vw;
-	padding: 5px
-}
-#descripcion #precios li{
-	padding: 2px;
+	& #productoTitulo{
+		color: #E3B237;
+		font-size: 3vw;
+		font-family: $miFuente;
+		margin: 0px;
+	}
+	& ul{
+		color: #E3B237;
+		font-size: 1.4vw;
+		font-family: $miFuente;
+		margin: 0px;
+		list-style-type: none;
+	}
+	& #precios{
+		font-size: 2vw;
+		padding: 5px;
+		& li{
+			padding: 2px;
+		}
+	}
 }
 //-----------------------------MENU POR DERECHA----------------------------//
 .menuD{
@@ -308,21 +301,19 @@ textarea{
 	width: 55vw;
 	margin: 0.3vw 1.4vw 3.5vw 0vw;
 	border-radius: 5.8vw;
+	&:hover{
+		border: 8px solid white;
+	}
+	& img{
+		width: 20vw;
+		padding: 2vw;
+		border-radius: 5.8vw;
+	}
+	& #descripcion{
+		min-height: 18vw;
+		margin: 15px;
+	}
 }
-.menuD:hover{
-	border: 8px solid white;
-}
-.menuD img{
-	width: 20vw;
-	padding: 2vw;
-	border-radius: 5.8vw;
-}
-
-.menuD #descripcion{
-	min-height: 18vw;
-	margin: 15px;
-}
-
 //-------------------------RECIBE------------------------//
 #recibe{
 	font-size:5vw;
@@ -340,47 +331,47 @@ textarea{
 	margin: auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	& img{
+		max-width: 46vw;
+		max-height: 30vw;
+	}
 }
-.containerCarrusel img{
-	max-width: 46vw;
-	max-height: 30vw;
-}
-
 //-------------------------PERSONAL------------------------//
-.personal div{
-	padding: 20px;
+.personal{
+	& div{
+		padding: 20px;
+	}
+	& p{
+		text-align: center;
+		font-size: 2vw;
+		color: #FFB908;
+		font-family: $miFuente;
+	}
+	& img{
+		width: 15vw;
+	}
 }
-.personal p{
-	text-align: center;
-	font-size: 2vw;
-	color: #FFB908;
-	font-family: $miFuente;
-}
-.personal img{
-	width: 15vw;
-}
-
 //-----------------------------MEDIA 1024PX----------------------------//
 
 @media all and (max-width: 1024px){
 
 	.encabezado{
 		min-height: 30vw;
-	}
-	.encabezado img{
-		width: 20vw;
-	}
-	.encabezado .titulo{
-		font-size: 10vw;
+		& img{
+			width: 20vw;
+		}
+		& .titulo{
+			font-size: 10vw;
+		}
 	}
 	.nav{
 		min-height: 15vw;
-	}
-	.nav .a1{
-		font-size: 4.5vw;
-	}
-	.nav .a1especial{
-		font-size: 4.5vw;
+		& .a1{
+			font-size: 4.5vw;
+		}
+		& .a1especial{
+			font-size: 4.5vw;
+		}
 	}
 	#main{
 		grid-template-rows: repeat(3, 50vw);
@@ -403,82 +394,84 @@ textarea{
 	}
 	.redes{
 		min-height: 18vw;
-	}
-	.redes div img{
-		width: 8vw;
+		& div img{
+			width: 8vw;
+		}
 	}
 	.botonPedido{
 		width: 10vw;
 	}
-	
 	.menuI{
 		width: 90%;
 		margin: 2vw 5vw;
 		height: 40vw;
 		border: 6px solid #FFB908;
-	}
-
-	.menuI #descripcion{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex-grow: 1;
-		text-align: center;
+		& #descripcion{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-grow: 1;
+			text-align: center;
+		}
+		& img{
+			width: 25vw;
+		}
 	}
 	.menuD{
 		width: 90%;
 		margin: 2vw 5vw;
 		height: 40vw;
 		border: 6px solid #FFB908;
+		& #descripcion{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-grow: 1;
+			text-align: center;
+		}
+		& img{
+			width: 25vw;
+		}
 	}
-	.menuD #descripcion{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex-grow: 1;
-		text-align: center;
-	}
-
-	#descripcion #productoTitulo{
-		font-size: 3.5vw;
-	}
-	#descripcion ul{
-		font-size: 2vw;
-	}
-	#descripcion #precios{
-		font-size: 2.5vw;
-	}
-	.menuI img{
-		width: 25vw;
-	}
-	.menuD img{
-		width: 25vw;
+	#descripcion{
+		& #productoTitulo{
+			font-size: 3.5vw;
+		}
+		& ul{
+			font-size: 2vw;
+		}
+		& #precios{
+			font-size: 2.5vw;
+		}
 	}
 	.containerCarrusel{
 		max-width: 70vw;
 		min-width: 70vw;
 		max-height: 45vw;
 		min-height: 44vw;
-
+		& img{
+			max-width: 70vw;
+			max-height: 54vw;
+		}
 	}
-	.containerCarrusel img{
-		max-width: 70vw;
-		max-height: 54vw;
+	.personal{
+		& p{
+			font-size: 4vw;
+		}
+		& img{
+			width: 35vw;
+		}
 	}
-	.personal p{
-		font-size: 4vw;
-	}
-	.personal img{
-		width: 35vw;
-	}
-	form input{
-		height: 5vw;
-		font-size: 3.1vw;
-		border: 3px solid #FFB908;
-	}
-	form label{
-		font-weight: 550;
-		font-size: 4.1vw;
+	form{
+		& input{
+			height: 5vw;
+			font-size: 3.1vw;
+			border: 3px solid #FFB908;
+		}
+		& label{
+			font-weight: 550;
+			font-size: 4.1vw;
+		}
 	}
 	textarea{
 		width: 37vw;
@@ -521,56 +514,77 @@ textarea{
 
 	.encabezado{
 		min-height: 40vw;
-	}
-	.encabezado img{
-		width: 30vw;
-	}
-	.encabezado .titulo{
-		font-size: 10vw;
+		& img{
+			width: 30vw;
+		}
+		& .titulo{
+			font-size: 10vw;
+		}
 	}
 	.nav{
 		min-height: 20vw;
-	}
-	.nav .a1{
-		font-size: 5.5vw;
-	}
-	.nav .a1especial{
-		font-size: 5.5vw;
+		& .a1{
+			font-size: 5.5vw;
+		}
+		& .a1especial{
+			font-size: 5.5vw;
+		}
 	}
 	#main{
 		grid-template-rows: repeat(3, 100vw);
 	}
-	.main1 .mainTitulo{
-		font-size: 5.5vw;
+	.main1{
+		& .mainTitulo{
+			font-size: 5.5vw;
+		}
+		& div img{
+			width: 30vw;
+		}
 	}
-	.main2 .mainTitulo{
-		font-size: 5.5vw;
+	.main2{
+		& .mainTitulo{
+			font-size: 5.5vw;
+		}
+		& div img{
+			width: 22vw;
+		}
 	}
-	.main3 .mainTitulo{
-		font-size: 5.5vw;
+	.main3{
+		& .mainTitulo{
+			font-size: 5.5vw;
+		}
+		& div img{
+			width: 38vw;
+		}
+	}
+	.mainContenido{
+		max-height: 70vw;
+	}
+	#parrafo{
+		font-size: 3.6vw;
 	}
 	.mapa{
 		padding: 10px;
 		margin-right: 35px;
-	}
-	.mapa iframe{
-		max-width: 35vw;
-	}
-	#mapaTitulo p{
-		font-size: 6.5vw;
+		& iframe{
+			max-width: 35vw;
+		}
 	}
 	#mapaTitulo{
 		margin-left: 15px;
+		& p{
+			font-size: 6.5vw;
+		}
 	}
 	.redes{
 		min-height: 18vw;
-	}
-	.redes div{
-		margin: 5px;
-		border: 3px solid black;
-	}
-	.redes div img{
-		width: 8vw;
+		& div{
+			margin: 5px;
+			border: 3px solid black;
+			& img{
+				width: 8vw;
+			}
+		}
 	}
 	.botonPedido{
 		width: 14vw;
@@ -592,33 +606,36 @@ textarea{
 		min-width: 90vw;
 		max-height: 65vw;
 		min-height: 64vw;
-
+		& img{
+			max-width: 90vw;
+			max-height: 74vw;
+		}
 	}
-	.containerCarrusel img{
-		max-width: 90vw;
-		max-height: 74vw;
+	.personal{
+		& p{
+			font-size: 3.4vw;
+		}
+		& img{
+			width: 35vw;
+		}
+		& div{
+			flex-direction: column;
+			align-items: center;
+		}
+		& p{
+			font-size: 5vw;
+		}
 	}
-	.personal p{
-		font-size: 3.4vw;
-	}
-	.personal img{
-		width: 35vw;
-	}
-	.personal div{
-		flex-direction: column;
-		align-items: center;
-	}
-	.personal p{
-		font-size: 5vw;
-	}
-	form input{
-		height: 7vw;
-		font-size: 3.5vw;
-		border: 3px solid #FFB908;
-	}
-	form label{
-		font-weight: 550;
-		font-size: 4.6vw;
+	form{
+		& input{
+			height: 7vw;
+			font-size: 3.5vw;
+			border: 3px solid #FFB908;
+		}
+		& label{
+			font-weight: 550;
+			font-size: 4.6vw;
+		}
 	}
 	textarea{
 		width: 40vw;
@@ -631,21 +648,6 @@ textarea{
 		padding-right: 4.5vw;
 		padding-left: 4.5vw;
 		font-size: 3.8vw;
-	}
-	.main1 div img{
-		width: 30vw;
-	}
-	.main2 div img{
-		width: 22vw;
-	}
-	.main3 div img{
-		width: 38vw;
-	}
-	.mainContenido{
-		max-height: 70vw;
-	}
-	#parrafo{
-		font-size: 3.6vw;
 	}
 }
 //-----------------------------MEDIA 450PX----------------------------//
@@ -670,71 +672,77 @@ textarea{
 		font-size: 5vw;
 		align-self: flex-start;
 	}
-	#descripcion #productoTitulo{
-		font-size: 4.4vw;
-	}
-	#descripcion ul{
-		font-size: 3vw;
-	}
-	#descripcion #precios{
-		font-size: 3.7vw;
+	#descripcion{
+		& #productoTitulo{
+			font-size: 4.4vw;
+		}
+		& ul{
+			font-size: 3vw;
+		}
+		& #precios{
+			font-size: 3.7vw;
+		}
 	}
 	.menuD{
 		height: 60vw;
+		& img{
+			width: 28vw;
+		}
 	}
 	.menuI{
 		height: 60vw;
-	}
-	.menuD img{
-		width: 28vw;
-	}
-	.menuI img{
-		width: 28vw;
+		& img{
+			width: 28vw;
+		}
 	}
 }
 //-----------------------------MEDIA 340PX----------------------------//
 @media all and (max-width: 340px){
 	.nav{
 		min-height: 20vw;
-	}
-	.nav .a1{
-		font-size: 7.5vw;
-	}
-	.nav .a1especial{
-		font-size: 7.5vw;
+		& .a1{
+			font-size: 7.5vw;
+		}
+		& .a1especial{
+			font-size: 7.5vw;
+		}
 	}
 }
 //-----------------------------MEDIA 280PX----------------------------//
 @media all and (max-width: 280px){
-	#descripcion #productoTitulo{
-		font-size: 5.8vw;
-		padding-bottom: 5px;
-	}
-	#descripcion ul{
-		font-size: 3.8vw;
-	}
-	#descripcion #precios{
-		font-size: 4vw;
+	#descripcion{
+		& #productoTitulo{
+			font-size: 5.8vw;
+			padding-bottom: 5px;
+		}
+		& ul{
+			font-size: 3.8vw;
+		}
+		& precios{
+			font-size: 4vw;
+		}
 	}
 	.menuD{
 		height: 90vw;
+		& img{
+			width: 28vw;
+		}
 	}
 	.menuI{
 		height: 90vw;
+		& img{
+			width: 28vw;
+		}
 	}
-	.menuD img{
-		width: 28vw;
-	}
-	.menuI img{
-		width: 28vw;
-	}
-	form input{
-		height: 10vw;
-		font-size: 4.8vw;
-	}
-	form label{
-		font-weight: 550;
-		font-size: 5vw;
+	form{
+		& input{
+			height: 10vw;
+			font-size: 4.8vw;
+		}
+		& label{
+			font-weight: 550;
+			font-size: 5vw;
+		}
 	}
 	textarea{
 		width:56vw;

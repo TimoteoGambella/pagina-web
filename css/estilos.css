@@ -152,7 +152,9 @@ FUENTE:
   background: linear-gradient(black, #FFB908, black, #FFB908, black, #FFB908, black);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "main1" "main2" "main3";
+      grid-template-areas: "main1"
+ "main2"
+ "main3";
   -ms-grid-rows: (50vw)[3];
       grid-template-rows: repeat(3, 50vw);
 }
@@ -185,8 +187,8 @@ FUENTE:
 }
 
 .main3 div img {
-  padding: 15px;
   width: 18vw;
+  padding: 15px;
 }
 
 .mainTitulo {
@@ -350,7 +352,7 @@ textarea {
   border-radius: 5.8vw;
 }
 
-.menuI #descripcion {
+#descripcion {
   min-height: 18vw;
   margin: 15px;
 }
@@ -509,6 +511,9 @@ textarea {
             flex-grow: 1;
     text-align: center;
   }
+  .menuI img {
+    width: 25vw;
+  }
   .menuD {
     width: 90%;
     margin: 2vw 5vw;
@@ -531,6 +536,9 @@ textarea {
             flex-grow: 1;
     text-align: center;
   }
+  .menuD img {
+    width: 25vw;
+  }
   #descripcion #productoTitulo {
     font-size: 3.5vw;
   }
@@ -539,12 +547,6 @@ textarea {
   }
   #descripcion #precios {
     font-size: 2.5vw;
-  }
-  .menuI img {
-    width: 25vw;
-  }
-  .menuD img {
-    width: 25vw;
   }
   .containerCarrusel {
     max-width: 70vw;
@@ -636,11 +638,26 @@ textarea {
   .main1 .mainTitulo {
     font-size: 5.5vw;
   }
+  .main1 div img {
+    width: 30vw;
+  }
   .main2 .mainTitulo {
     font-size: 5.5vw;
   }
+  .main2 div img {
+    width: 22vw;
+  }
   .main3 .mainTitulo {
     font-size: 5.5vw;
+  }
+  .main3 div img {
+    width: 38vw;
+  }
+  .mainContenido {
+    max-height: 70vw;
+  }
+  #parrafo {
+    font-size: 3.6vw;
   }
   .mapa {
     padding: 10px;
@@ -649,11 +666,11 @@ textarea {
   .mapa iframe {
     max-width: 35vw;
   }
-  #mapaTitulo p {
-    font-size: 6.5vw;
-  }
   #mapaTitulo {
     margin-left: 15px;
+  }
+  #mapaTitulo p {
+    font-size: 6.5vw;
   }
   .redes {
     min-height: 18vw;
@@ -729,21 +746,6 @@ textarea {
     padding-left: 4.5vw;
     font-size: 3.8vw;
   }
-  .main1 div img {
-    width: 30vw;
-  }
-  .main2 div img {
-    width: 22vw;
-  }
-  .main3 div img {
-    width: 38vw;
-  }
-  .mainContenido {
-    max-height: 70vw;
-  }
-  #parrafo {
-    font-size: 3.6vw;
-  }
 }
 
 @media all and (max-width: 450px) {
@@ -781,11 +783,11 @@ textarea {
   .menuD {
     height: 60vw;
   }
-  .menuI {
-    height: 60vw;
-  }
   .menuD img {
     width: 28vw;
+  }
+  .menuI {
+    height: 60vw;
   }
   .menuI img {
     width: 28vw;
@@ -812,17 +814,17 @@ textarea {
   #descripcion ul {
     font-size: 3.8vw;
   }
-  #descripcion #precios {
+  #descripcion precios {
     font-size: 4vw;
   }
   .menuD {
     height: 90vw;
   }
-  .menuI {
-    height: 90vw;
-  }
   .menuD img {
     width: 28vw;
+  }
+  .menuI {
+    height: 90vw;
   }
   .menuI img {
     width: 28vw;
