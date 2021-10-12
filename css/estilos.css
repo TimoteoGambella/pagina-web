@@ -122,7 +122,7 @@ FUENTE:
   border-radius: 40px;
 }
 
-.nav .a1:hover {
+.nav .a1 :hover {
   background: #E3B237;
   border: 1px solid #000;
 }
@@ -340,7 +340,7 @@ textarea {
   border-radius: 5.8vw;
 }
 
-.menuI:hover {
+.menuI :hover {
   border: 8px solid white;
 }
 
@@ -387,7 +387,7 @@ textarea {
   border-radius: 5.8vw;
 }
 
-.menuD:hover {
+.menuD :hover {
   border: 8px solid white;
 }
 
@@ -441,13 +441,13 @@ textarea {
 
 @media all and (max-width: 1024px) {
   .encabezado {
-    min-height: 30vw;
+    min-height: 28vw;
   }
   .encabezado img {
     width: 20vw;
   }
   .encabezado .titulo {
-    font-size: 10vw;
+    font-size: 7vw;
   }
   .nav {
     min-height: 15vw;
@@ -607,6 +607,12 @@ textarea {
     font-size: 2.8vw;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .encabezado .titulo {
+    font-size: 9vw;
   }
 }
 
