@@ -340,7 +340,7 @@ textarea {
   border-radius: 5.8vw;
 }
 
-.menuI :hover {
+.menuI:hover {
   border: 8px solid white;
 }
 
@@ -387,7 +387,7 @@ textarea {
   border-radius: 5.8vw;
 }
 
-.menuD :hover {
+.menuD:hover {
   border: 8px solid white;
 }
 

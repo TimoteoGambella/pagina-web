@@ -261,7 +261,7 @@ textarea{
 	width: 55vw;
 	margin: 0.3vw 0vw 3.5vw 1.4vw;
 	border-radius: 5.8vw;
-	:hover{
+	&:hover{
 		border: 8px solid white;
 	}
 	img{
@@ -301,7 +301,7 @@ textarea{
 	width: 55vw;
 	margin: 0.3vw 1.4vw 3.5vw 0vw;
 	border-radius: 5.8vw;
-	:hover{
+	&:hover{
 		border: 8px solid white;
 	}
 	img{
