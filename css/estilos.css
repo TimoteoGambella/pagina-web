@@ -424,6 +424,13 @@ textarea {
   max-height: 30vw;
 }
 
+.containerCarrusel .galeriaBurger {
+  color: #E3B237;
+  font-size: 3vw;
+  font-family: "New Rocker", cursive;
+  margin: 0px;
+}
+
 .personal div {
   padding: 20px;
 }
