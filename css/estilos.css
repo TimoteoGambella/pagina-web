@@ -416,7 +416,7 @@ textarea {
   min-height: 30vw;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 .containerCarrusel img {
@@ -562,6 +562,9 @@ textarea {
   .containerCarrusel img {
     max-width: 70vw;
     max-height: 54vw;
+  }
+  .containerCarrusel .galeriaBurger {
+    font-size: 5vw;
   }
   .personal p {
     font-size: 4vw;
@@ -717,6 +720,9 @@ textarea {
   .containerCarrusel img {
     max-width: 90vw;
     max-height: 74vw;
+  }
+  .containerCarrusel .galeriaBurger {
+    font-size: 6vw;
   }
   .personal p {
     font-size: 3.4vw;
