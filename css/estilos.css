@@ -590,6 +590,15 @@ textarea {
   .containerCarrusel .galeriaBurger {
     font-size: 5vw;
   }
+  .fotoCombo {
+    max-width: 40vw;
+  }
+  .contenidoCombo {
+    font-size: 4vw;
+  }
+  #parrafoGaleria {
+    font-size: 8vw;
+  }
   .personal p {
     font-size: 4vw;
   }
