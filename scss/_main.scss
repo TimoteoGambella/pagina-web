@@ -330,7 +330,7 @@ textarea{
 	min-height: 30vw;
 	margin: auto;
 	margin-top: 50px;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 	img{
 		max-width: 46vw;
 		max-height: 30vw;
@@ -341,6 +341,27 @@ textarea{
 		font-family: $miFuente;
 		margin: 0px;
 	}
+}
+#parrafoGaleria{
+	color: #E3B237;
+	font-size: 3vw;
+	font-family: $miFuente;
+}
+.fotoCombo{
+	max-width: 30vw;
+	padding: 10px;
+	background-color: #FFB908;
+	border-radius: 20px;
+	margin: 20px;
+	&:hover{
+		background-color:white;
+	}
+}
+.contenidoCombo{
+	font-size: 2vw;
+	color: #E3B237;
+	font-family: $miFuente;
+
 }
 //-------------------------PERSONAL------------------------//
 .personal{
