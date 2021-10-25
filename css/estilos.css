@@ -461,6 +461,13 @@ textarea {
 
 .personal p {
   text-align: center;
+  font-size: 2.5vw;
+  color: #FFB908;
+  font-family: "New Rocker", cursive;
+}
+
+.personal li {
+  text-align: center;
   font-size: 2vw;
   color: #FFB908;
   font-family: "New Rocker", cursive;
@@ -599,8 +606,11 @@ textarea {
   #parrafoGaleria {
     font-size: 8vw;
   }
-  .personal p {
+  .personal li {
     font-size: 4vw;
+  }
+  .personal p {
+    font-size: 4.5vw;
   }
   .personal img {
     width: 35vw;
@@ -757,8 +767,11 @@ textarea {
   .containerCarrusel .galeriaBurger {
     font-size: 6vw;
   }
+  .personal li {
+    font-size: 5vw;
+  }
   .personal p {
-    font-size: 3.4vw;
+    font-size: 5.5vw;
   }
   .personal img {
     width: 35vw;
@@ -771,9 +784,6 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .personal p {
-    font-size: 5vw;
   }
   form input {
     height: 7vw;

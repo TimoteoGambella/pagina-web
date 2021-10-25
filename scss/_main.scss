@@ -369,6 +369,12 @@ textarea{
 	}
 	p{
 		text-align: center;
+		font-size: 2.5vw;
+		color: #FFB908;
+		font-family: $miFuente;
+	}
+	li{
+		text-align: center;
 		font-size: 2vw;
 		color: #FFB908;
 		font-family: $miFuente;
@@ -494,8 +500,11 @@ textarea{
 		font-size: 8vw;
 	}
 	.personal{
-		p{
+		li{
 			font-size: 4vw;
+		}
+		p{
+			font-size: 4.5vw;
 		}
 		img{
 			width: 35vw;
@@ -663,8 +672,11 @@ textarea{
 		}
 	}
 	.personal{
+		li{
+			font-size: 5vw;
+		}
 		p{
-			font-size: 3.4vw;
+			font-size: 5.5vw;
 		}
 		img{
 			width: 35vw;
@@ -672,9 +684,6 @@ textarea{
 		div{
 			flex-direction: column;
 			align-items: center;
-		}
-		p{
-			font-size: 5vw;
 		}
 	}
 	form{
